@@ -779,10 +779,9 @@ section ol {
 }
 
 /* ✅ Trust Icons Section Container */
-/* ✅ Trust Icons Section Container */
 .trust-icons-section {
-  background-color: #f9f9f9; /* light background */
-  padding: 4rem 1rem; /* Increased for better spacing */
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -828,7 +827,7 @@ section ol {
   margin: 0 auto;
 }
 
-/* ✅ Base Image Style (will get overridden by media queries) */
+/* ✅ Base Image Style */
 .trust-icon-item img {
   width: 130px;
   height: auto;
@@ -836,24 +835,21 @@ section ol {
   margin-bottom: 1rem;
 }
 
-/* ✅ Heading Style */
+/* ✅ Heading */
 .trust-icon-item h3 {
   font-size: 1.1rem;
   font-weight: 500;
   color: #353535;
-  text-align: center;
   margin-bottom: 10px;
 }
 
-/* ✅ Paragraph Style */
+/* ✅ Paragraph */
 .trust-icon-item p {
   font-size: 1.1rem;
   color: #353535;
   line-height: 1.5;
   margin-bottom: 12px;
-  text-align: center;
 }
-
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
@@ -1012,7 +1008,7 @@ section ol {
     text-align: justify;
   }
   
-  /* ✅ Trust Mobile Boost: Slightly Larger on Small Screens (5–10%) */
+  /* Trsuted ✅ Mobile Boost (5–10% size increase) */
 @media (max-width: 768px) {
   .trust-icon-item img {
     width: 140px !important;
@@ -1024,10 +1020,12 @@ section ol {
   }
 }
 
-/* ✅ Desktop Boost: ~20% Larger */
+/* ✅ Desktop Boost (~20% image & font increase) */
 @media (min-width: 769px) {
   .trust-icon-item img {
-    width: 156px !important;
+    width: 170px !important;
+    max-width: 100%;
+    height: auto;
   }
 
   .trust-icon-item h3,
@@ -1035,6 +1033,7 @@ section ol {
     font-size: 1.32rem !important;
   }
 }
+
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
