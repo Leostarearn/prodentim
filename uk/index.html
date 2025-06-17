@@ -1011,20 +1011,35 @@ section ol {
     text-align: justify;
   }
   
-  @media (max-width: 768px) {
-  .badge-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  /* 🔍 Slight increase on mobile (max 768px) */
+@media (max-width: 768px) {
+  .trust-icon-item img {
+    width: 140px;   /* originally 130px → ~7% larger */
   }
 
-  .badge-item {
-    margin-bottom: 2rem;
+  .trust-icon-item h3 {
+    font-size: 1.18rem;  /* originally 1.1rem → ~7% larger */
+  }
+
+  .trust-icon-item p {
+    font-size: 1.18rem;
   }
 }
 
+/* 💻 Bigger increase on desktop (min 769px) */
+@media (min-width: 769px) {
+  .trust-icon-item img {
+    width: 156px;   /* originally 130px → 20% larger */
+  }
 
+  .trust-icon-item h3 {
+    font-size: 1.32rem;  /* 1.1rem + 20% */
+  }
+
+  .trust-icon-item p {
+    font-size: 1.32rem;
+  }
+}
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
