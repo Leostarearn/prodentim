@@ -779,13 +779,14 @@ section ol {
 }
 
 /* ✅ Trust Icons Section Container */
+/* ✅ Trust Icons Section Container */
 .trust-icons-section {
   background-color: #f9f9f9; /* light background */
-  padding: 3rem 1rem;
+  padding: 4rem 1rem; /* Increased for better spacing */
   text-align: center;
 }
 
-/* ✅ Headline Style: use same section-header structure */
+/* ✅ Section Header */
 .trust-icons-section .section-header {
   position: relative;
   left: 50%;
@@ -802,7 +803,7 @@ section ol {
 }
 
 .trust-icons-section .section-header h2 {
-  font-size: 2.4rem;   /* match global */
+  font-size: 2.4rem;
   font-weight: 700;
   color: #F2F2F2;
   margin: 0;
@@ -827,7 +828,7 @@ section ol {
   margin: 0 auto;
 }
 
-/* ✅ Slightly larger image for desktop/mobile */
+/* ✅ Base Image Style (will get overridden by media queries) */
 .trust-icon-item img {
   width: 130px;
   height: auto;
@@ -835,19 +836,19 @@ section ol {
   margin-bottom: 1rem;
 }
 
-/* ✅ Heading in each block */
+/* ✅ Heading Style */
 .trust-icon-item h3 {
-  font-size: 1.1rem;  /* match global h3 */
+  font-size: 1.1rem;
   font-weight: 500;
   color: #353535;
   text-align: center;
   margin-bottom: 10px;
 }
 
-/* ✅ Paragraph inherits global */
+/* ✅ Paragraph Style */
 .trust-icon-item p {
-  font-size: 1.1rem;  /* match global p */
-  color: #353535;     /* unify color */
+  font-size: 1.1rem;
+  color: #353535;
   line-height: 1.5;
   margin-bottom: 12px;
   text-align: center;
@@ -1011,33 +1012,27 @@ section ol {
     text-align: justify;
   }
   
-  /* 🔍 Slight increase on mobile (max 768px) */
+  /* ✅ Trust Mobile Boost: Slightly Larger on Small Screens (5–10%) */
 @media (max-width: 768px) {
   .trust-icon-item img {
-    width: 140px;   /* originally 130px → ~7% larger */
+    width: 140px !important;
   }
 
-  .trust-icon-item h3 {
-    font-size: 1.18rem;  /* originally 1.1rem → ~7% larger */
-  }
-
+  .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.18rem;
+    font-size: 1.18rem !important;
   }
 }
 
-/* 💻 Bigger increase on desktop (min 769px) */
+/* ✅ Desktop Boost: ~20% Larger */
 @media (min-width: 769px) {
   .trust-icon-item img {
-    width: 156px;   /* originally 130px → 20% larger */
+    width: 156px !important;
   }
 
-  .trust-icon-item h3 {
-    font-size: 1.32rem;  /* 1.1rem + 20% */
-  }
-
+  .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.32rem;
+    font-size: 1.32rem !important;
   }
 }
 
