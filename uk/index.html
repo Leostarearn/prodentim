@@ -935,6 +935,16 @@ section ol {
     padding: 0 12px;
     text-align: justify;
   }
+  @media (max-width: 768px) {
+  .badge-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .badge-item {
+    margin-bottom: 2rem;
+  }
+}
+
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
@@ -1142,25 +1152,6 @@ section ol {
     />
   </picture>
 
-  <!-- ✅ Trust Badge Image Just Below Product Image -->
-  <div style="margin-top: 1rem; text-align: center;">
-    <img 
-      src="made-in-usa.webp"
-      alt="Made in USA, GMP Certified, FDA Registered"
-      loading="lazy"
-      width="1761" height="297"
-      style="
-        max-width: 100%;
-        height: auto;
-        width: 100%;
-        max-width: 600px;
-        display: block;
-        margin: 0 auto;
-      "
-    />
-  </div>
-</div>
-
     <!-- Text RIGHT -->
     <div class="hero-content">
       <h1>PrimeBiome</h1>
@@ -1196,7 +1187,56 @@ section ol {
          style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-width: 600px;">
   </div>
 </section>
-  
+
+  <!-- Section: Trust Badges -->
+<section class="full-width-section" aria-label="ProDentim Trust Badges">
+  <div class="content-wrapper" style="text-align: center; padding: 2rem 1rem;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: #111;">
+      ProDentim: Transform Your Oral Health Naturally!
+    </h2>
+    
+    <div class="badge-grid" style="
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      justify-items: center;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+    ">
+      
+      <!-- Badge 1 -->
+      <div class="badge-item" style="max-width: 300px;">
+        <img src="made-in-usa.webp" alt="Made In USA" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
+        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">Made In USA</h3>
+        <p style="font-size: 0.95rem; color: #555;">Prime Biome is proudly made in the United States of America.</p>
+      </div>
+
+      <!-- Badge 2 -->
+      <div class="badge-item" style="max-width: 300px;">
+        <img src="gmp.webp" alt="GMP Certified" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
+        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">GMP Certified</h3>
+        <p style="font-size: 0.95rem; color: #555;">This product has been certified under Good Manufacturing Practice standards.</p>
+      </div>
+
+      <!-- Badge 3 -->
+      <div class="badge-item" style="max-width: 300px;">
+        <img src="fda.webp" alt="FDA Approved" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
+        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">FDA Approved</h3>
+        <p style="font-size: 0.95rem; color: #555;">PrimeBiome is formulated in a facility registered with FDA & follows all FDA regulations.</p>
+      </div>
+
+      <!-- Badge 4 -->
+      <div class="badge-item" style="max-width: 300px;">
+        <img src="natural.webp" alt="100% Natural" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
+        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">100% Natural</h3>
+        <p style="font-size: 0.95rem; color: #555;">We are proud to offer PrimeBiome, made with all-natural, non-GMO and gluten-free ingredients.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   
 <!-- Section: What Is PrimeBiome? -->
 <section id="what-is-primebiome" class="full-width-section">
