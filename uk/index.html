@@ -778,6 +778,64 @@ section ol {
   margin-right: -50vw;
 }
 
+    /* Trust Icons Section */
+.trust-icons-section {
+  background-color: #f9f9f9; /* light background */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Grid layout */
+.trust-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+/* Each item */
+.trust-icon-item {
+  flex: 1 1 200px;
+  max-width: 260px;
+}
+
+.trust-icon-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.trust-icon-item h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #353535;
+}
+
+.trust-icon-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Match headline style like other sections */
+.trust-icons-section .section-header {
+  background-color: #EB787A;
+  color: white;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.trust-icons-section .section-header h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
   .hamburger {
@@ -1182,53 +1240,50 @@ section ol {
 </section>
 
 
-  <!-- Section: Trust Badges -->
-<section class="full-width-section" aria-label="ProDentim Trust Badges">
-  <div class="content-wrapper" style="text-align: center; padding: 2rem 1rem;">
-    <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: #111;">
-      ProDentim: Transform Your Oral Health Naturally!
-    </h2>
-    
-    <div class="badge-grid" style="
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      justify-items: center;
-      align-items: start;
-      max-width: 1200px;
-      margin: 0 auto; ">
-      
-      <!-- Badge 1 -->
-      <div class="badge-item" style="max-width: 300px;">
-        <img src="made-in-usa.webp" alt="Made In USA" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
-        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">Made In USA</h3>
-        <p style="font-size: 0.95rem; color: #555;">Prime Biome is proudly made in the United States of America.</p>
-      </div>
+ <!-- Section: Why Choose PrimeBiome -->
+<section class="trust-icons-section full-width-section">
 
-      <!-- Badge 2 -->
-      <div class="badge-item" style="max-width: 300px;">
-        <img src="gmp.webp" alt="GMP Certified" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
-        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">GMP Certified</h3>
-        <p style="font-size: 0.95rem; color: #555;">This product has been certified under Good Manufacturing Practice standards.</p>
-      </div>
-
-      <!-- Badge 3 -->
-      <div class="badge-item" style="max-width: 300px;">
-        <img src="fda.webp" alt="FDA Approved" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
-        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">FDA Approved</h3>
-        <p style="font-size: 0.95rem; color: #555;">PrimeBiome is formulated in a facility registered with FDA & follows all FDA regulations.</p>
-      </div>
-
-      <!-- Badge 4 -->
-      <div class="badge-item" style="max-width: 300px;">
-        <img src="natural.webp" alt="100% Natural" loading="lazy" width="400" height="300" style="width: 100%; height: auto; display: block; margin: 0 auto 0.5rem;">
-        <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1.1rem;">100% Natural</h3>
-        <p style="font-size: 0.95rem; color: #555;">We are proud to offer PrimeBiome, made with all-natural, non-GMO and gluten-free ingredients.</p>
-      </div>
-
+  <!-- Section Header (Matches others) -->
+  <div class="section-header">
+    <div class="inner">
+      <h2>ProDentim: Transform Your Oral Health Naturally!</h2>
     </div>
   </div>
+
+  <!-- Icons + Text Container -->
+  <div class="trust-icons-grid">
+    
+    <!-- Block 1 -->
+    <div class="trust-icon-item">
+      <img src="made-in-usa.png" alt="Made in USA icon" loading="lazy" width="100" height="100">
+      <h3>Made In USA</h3>
+      <p>Prime Biome is proudly made in the United States of America.</p>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="trust-icon-item">
+      <img src="gmp.png" alt="GMP Certified icon" loading="lazy" width="100" height="100">
+      <h3>GMP Certified</h3>
+      <p>This product has been certified under Good Manufacturing Practice standards.</p>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="trust-icon-item">
+      <img src="fda.png" alt="FDA Approved icon" loading="lazy" width="100" height="100">
+      <h3>FDA Approved</h3>
+      <p>PrimeBiome is formulated in a facility registered with FDA & follows all FDA regulations.</p>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="trust-icon-item">
+      <img src="natural.png" alt="100% Natural icon" loading="lazy" width="100" height="100">
+      <h3>100% Natural</h3>
+      <p>We are proud to offer PrimeBiome, made with all-natural, non-GMO and gluten-free ingredients.</p>
+    </div>
+
+  </div>
 </section>
+
 
   
 <!-- Section: What Is PrimeBiome? -->
