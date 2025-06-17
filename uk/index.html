@@ -778,30 +778,37 @@ section ol {
   margin-right: -50vw;
 }
 
-    /* Trust Icons Section */
-/* Trust Icons Section */
+/* ✅ Trust Icons Section Container */
 .trust-icons-section {
   background-color: #f9f9f9; /* light background */
   padding: 3rem 1rem;
   text-align: center;
 }
 
-/* Headline style for section */
+/* ✅ Headline Style: use same section-header structure */
 .trust-icons-section .section-header {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   background-color: #EB787A;
-  color: white;
-  padding: 1.5rem 1rem;
-  margin-bottom: 2rem;
+  padding: 20px 0;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .trust-icons-section .section-header h2 {
-  color: white;
-  font-size: 1.4rem;
+  font-size: 2.4rem;   /* match global */
   font-weight: 700;
+  color: #F2F2F2;
   margin: 0;
 }
 
-/* Grid layout */
+/* ✅ Grid layout */
 .trust-icons-grid {
   display: flex;
   flex-wrap: wrap;
@@ -812,7 +819,7 @@ section ol {
   padding-top: 1rem;
 }
 
-/* Each trust icon item */
+/* ✅ Trust icon item block */
 .trust-icon-item {
   flex: 1 1 200px;
   max-width: 260px;
@@ -820,28 +827,29 @@ section ol {
   margin: 0 auto;
 }
 
-/* Image */
+/* ✅ Slightly larger image for desktop/mobile */
 .trust-icon-item img {
-  width: 120px;
+  width: 130px;
   height: auto;
-  max-height: 100px;
-  margin-bottom: 0.75rem;
+  max-height: 110px;
+  margin-bottom: 1rem;
 }
 
-/* Subheadline */
+/* ✅ Heading in each block */
 .trust-icon-item h3 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;  /* match global h3 */
   font-weight: 500;
-  margin: 0.5rem 0;
   color: #353535;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-/* Paragraph text */
+/* ✅ Paragraph inherits global */
 .trust-icon-item p {
-  font-size: 1.4rem;
-  color: #555;
-  line-height: 1.4;
+  font-size: 1.1rem;  /* match global p */
+  color: #353535;     /* unify color */
+  line-height: 1.5;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -1002,15 +1010,20 @@ section ol {
     padding: 0 12px;
     text-align: justify;
   }
+  
   @media (max-width: 768px) {
   .badge-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .badge-item {
     margin-bottom: 2rem;
   }
 }
+
 
 
   /* ✅ CLS Fix: Hero Image and Container */
@@ -1251,12 +1264,12 @@ section ol {
 
 
  <!-- Section: Why Choose PrimeBiome -->
-<section class="trust-icons-section full-width-section">
+<section class="trust-icons-section full-width-section" aria-label="Why Choose PrimeBiome">
 
-  <!-- Section Header (Matches others) -->
+  <!-- Section Header -->
   <div class="section-header">
     <div class="inner">
-      <h2>ProDentim: Transform Your Oral Health Naturally!</h2>
+      <h2>Why Choose PrimeBiome?</h2>
     </div>
   </div>
 
@@ -1265,35 +1278,34 @@ section ol {
     
     <!-- Block 1 -->
     <div class="trust-icon-item">
-      <img src="made-in-usa.webp" alt="Made in USA icon" loading="lazy" width="100" height="100">
+      <img src="made-in-usa.webp" alt="PrimeBiome - Made in USA icon" loading="lazy" width="100" height="100">
       <h3>Made In USA</h3>
-      <p>Prime Biome is proudly made in the United States of America.</p>
+      <p>PrimeBiome is proudly made in the United States of America.</p>
     </div>
 
     <!-- Block 2 -->
     <div class="trust-icon-item">
-      <img src="gmp.webp" alt="GMP Certified icon" loading="lazy" width="100" height="100">
+      <img src="gmp.webp" alt="PrimeBiome - GMP Certified icon" loading="lazy" width="100" height="100">
       <h3>GMP Certified</h3>
       <p>This product has been certified under Good Manufacturing Practice standards.</p>
     </div>
 
     <!-- Block 3 -->
     <div class="trust-icon-item">
-      <img src="fda.webp" alt="FDA Approved icon" loading="lazy" width="100" height="100">
-      <h3>FDA Approved</h3>
-      <p>PrimeBiome is formulated in a facility registered with FDA & follows all FDA regulations.</p>
+      <img src="fda.webp" alt="PrimeBiome - FDA Registered Facility icon" loading="lazy" width="100" height="100">
+      <h3>FDA Registered Facility</h3>
+      <p>Formulated in an FDA-registered facility following strict regulations.</p>
     </div>
 
     <!-- Block 4 -->
     <div class="trust-icon-item">
-      <img src="natural.webp" alt="100% Natural icon" loading="lazy" width="100" height="100">
+      <img src="natural.webp" alt="PrimeBiome - 100% Natural Ingredients icon" loading="lazy" width="100" height="100">
       <h3>100% Natural</h3>
-      <p>We are proud to offer PrimeBiome, made with all-natural, non-GMO and gluten-free ingredients.</p>
+      <p>Made with non-GMO, gluten-free, and natural ingredients you can trust.</p>
     </div>
 
   </div>
 </section>
-
 
   
 <!-- Section: What Is PrimeBiome? -->
