@@ -777,12 +777,13 @@ section ol {
   margin-right: -50vw;
 }
 
+/* ✅ Trust Icons Section Container */
 .trust-icons-section {
   background-color: #f9f9f9;
   padding: 2.6rem 1rem;
-  text-align: center;
 }
 
+/* ✅ Section Header (Full Width Red Stripe) */
 .trust-icons-section .section-header {
   position: relative;
   left: 50%;
@@ -805,12 +806,14 @@ section ol {
   margin: 0;
 }
 
+/* ✅ Wrapper */
 .trust-icons-section .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
+/* ✅ Grid Layout */
 .trust-icons-grid {
   display: flex;
   flex-wrap: wrap;
@@ -818,36 +821,42 @@ section ol {
   gap: 2rem;
 }
 
+/* ✅ Grid Item */
 .trust-icon-item {
   flex: 1 1 240px;
   max-width: 280px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
+/* ✅ Image */
 .trust-icon-item img {
   width: 160px;
   height: auto;
-  margin-bottom: 1rem;
   object-fit: contain;
-  transition: all 0.3s ease;
+  margin-bottom: 1rem;
 }
 
+/* ✅ Headline */
 .trust-icon-item h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #353535;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  text-align: center;
 }
 
+/* ✅ Paragraph */
 .trust-icon-item p {
   font-size: 1.1rem;
   color: #353535;
   line-height: 1.5;
-  margin-bottom: 12px;
+  text-align: center;
+  margin: 0 0 12px;
 }
-
-
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
@@ -1019,50 +1028,34 @@ section ol {
     text-align: justify;
   }
   
-  /* ✅ Mobile View Adjustments */
-@media (max-width: 768px) {
-  .trust-icon-item {
-    text-align: center;
-    max-width: 100%;
-  }
-
+  @media (max-width: 768px) {
   .trust-icon-item img {
     width: 160px;
-    height: auto;
-    margin: 0 auto 1rem;
-    display: block;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
     font-size: 1.1rem;
-    text-align: center;
   }
 }
 
-/* ✅ Desktop View Enhancements */
 @media (min-width: 769px) {
   .trust-icon-item {
-    text-align: center;
-    max-width: 340px;
-    margin: 0 auto;
+    max-width: 320px;
   }
 
   .trust-icon-item img {
     width: 240px;
     height: 150px;
-    object-fit: contain;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 1rem;
-    display: block;
+    aspect-ratio: 1/1;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
     font-size: 1.32rem;
-    text-align: center;
   }
 }
+
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
