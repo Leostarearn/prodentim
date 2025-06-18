@@ -890,7 +890,7 @@ section ol {
     flex-direction: column;
     padding: 40px 20px;
     gap: 50px;
-    text-align: center; /* ✅ fixed spelling (was: centre) */
+    text-align: center; /* ✅ fixed spelling (was 'centre') */
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -900,7 +900,7 @@ section ol {
   .hero-content {
     max-width: 100%;
     margin: 0 auto !important;
-    text-align: left !important; /* ✅ set hero-content image container left */
+    text-align: left !important; /* ✅ align hero container left */
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
@@ -910,28 +910,29 @@ section ol {
 
   .hero-content {
     padding: 0 10px !important;
-    text-align: left !important; /* ✅ enforce left alignment */
-    align-items: flex-start !important; /* ✅ optional: helps align child items left */
-  }
-
-  .hero-content ul,
-  .hero-content li {
-    text-align: left;
-  }
-
-  .hero-content ul {
-    padding-left: 20px; /* ✅ adds indent for bullets */
+    text-align: left !important;
+    align-items: flex-start !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .hero-content h1,
   .hero-content p,
   .hero-content ul,
+  .hero-content li,
   .hero-cta {
     text-align: left !important;
+    width: 100%;
+  }
+
+  .hero-content ul {
+    padding-left: 20px;
   }
 
   .hero-content h1 {
     font-size: 2.1rem;
+    line-height: 1.3;
   }
 
   h2 {
@@ -969,13 +970,15 @@ section ol {
     font-size: 1rem;
   }
 
-  /* ✅ NEW: Hero Rating Styling */
   .hero-rating {
     text-align: left !important;
     margin-top: 15px;
     font-size: 1rem;
+    color: #353535;
+    font-weight: 600;
   }
 }
+
 
 
 @media (max-width: 768px) {
