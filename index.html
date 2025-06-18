@@ -878,7 +878,7 @@ section ol {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     gap: 30px;
     padding: 20px;
     width: 100%;
@@ -890,7 +890,7 @@ section ol {
     flex-direction: column;
     padding: 40px 20px;
     gap: 50px;
-    text-align: centre;
+    text-align: center; /* ✅ fixed spelling (was: centre) */
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -900,7 +900,7 @@ section ol {
   .hero-content {
     max-width: 100%;
     margin: 0 auto !important;
-    text-align: center;
+    text-align: left !important; /* ✅ set hero-content image container left */
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
@@ -910,11 +910,17 @@ section ol {
 
   .hero-content {
     padding: 0 10px !important;
+    text-align: left !important; /* ✅ enforce left alignment */
+    align-items: flex-start !important; /* ✅ optional: helps align child items left */
   }
 
   .hero-content ul,
   .hero-content li {
     text-align: left;
+  }
+
+  .hero-content ul {
+    padding-left: 20px; /* ✅ adds indent for bullets */
   }
 
   .hero-content h1,
@@ -923,9 +929,6 @@ section ol {
   .hero-cta {
     text-align: left !important;
   }
-  .hero-content ul {
-  padding-left: 20px; /* optional, makes bullets cleaner */
-}
 
   .hero-content h1 {
     font-size: 2.1rem;
@@ -965,12 +968,15 @@ section ol {
   .ingredient-text p {
     font-size: 1rem;
   }
-   /* ✅ NEW: Hero Rating Styling */
+
+  /* ✅ NEW: Hero Rating Styling */
   .hero-rating {
-    text-align: center;
+    text-align: left !important;
     margin-top: 15px;
     font-size: 1rem;
+  }
 }
+
 
 @media (max-width: 768px) {
   .money-back-flex {
