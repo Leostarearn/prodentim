@@ -1016,22 +1016,10 @@ section ol {
     text-align: justify;
   }
   
-  /* Trsuted ✅ Mobile Boost (5–10% size increase) */
-@media (max-width: 768px) {
-  .trust-icon-item img {
-    width: 160px !important;
-  }
-
-  .trust-icon-item h3,
-  .trust-icon-item p {
-    font-size: 1.18rem !important;
-  }
-}
-
 /* ✅ Desktop Boost (~20% image & font increase) */
 @media (min-width: 769px) {
   .trust-icon-item img {
-    width: 240px !important;   /* visibly wider */
+    width: 240px !important;
     max-width: 100%;
     height: 150px;
     object-fit: contain;
@@ -1048,68 +1036,86 @@ section ol {
   }
 }
 
+/* ✅ CLS Fix: Hero Image and Container */
+.hero {
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  /* ✅ CLS Fix: Hero Image and Container */
-  .hero {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 50px;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 768 / 790;
+  object-fit: contain;
+  display: block;
+  min-height: 290px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 650px;
+  contain: layout style;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.1rem;
+}
+
+.hero-content p,
+.hero-content ul,
+.hero-content li,
+.hero-cta {
+  text-align: center;
+}
+
+.hero-rating {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+/* ✅ Mobile Fix: Reduce Trust Icons H2 Size */
+@media (max-width: 768px) {
+  .trust-icons-section .section-header h2 {
+    font-size: 1.6rem !important;
+    line-height: 1.3;
   }
 
-  .hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
+  .trust-icon-item img {
+    width: 160px !important;
   }
 
-  .hero-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 768 / 790;
-    object-fit: contain;
-    display: block;
-    min-height: 290px; /* ✅ Prevents CLS */
+  .trust-icon-item h3,
+  .trust-icon-item p {
+    font-size: 1.18rem !important;
   }
+}
 
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 650px;
-    contain: layout style;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.1rem;
-  }
-
-  .hero-content p,
-  .hero-content ul,
-  .hero-content li,
-  .hero-cta {
-    text-align: center;
-  }
-
-  .hero-rating {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1rem;
-  }
-
+/* ✅ Ultra Small Device Tweak */
 @media (max-width: 480px) {
   .hero-image img {
     max-width: 220px;
   }
 }
+
 
     /* ✅ Add this at the bottom */
   .btn-primary {
