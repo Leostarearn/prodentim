@@ -870,6 +870,16 @@ section ol {
   text-align: center;
   margin: 0 auto;
 }
+    .trust-icon-item {
+  flex: 1 1 240px;
+  max-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;              /* ✅ Add this */
+  flex-direction: column;     /* ✅ And this */
+  align-items: center;        /* ✅ This is the key fix */
+}
+
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
