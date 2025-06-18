@@ -880,7 +880,7 @@ section ol {
     justify-content: center;
     text-align: center;
     gap: 30px;
-    padding: 20px 0; /* ⬅️ 0 side padding for full-width stretch */
+    padding: 20px 0;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -888,7 +888,7 @@ section ol {
 
   .hero {
     flex-direction: column;
-    padding: 40px 0; /* ⬅️ remove horizontal white space */
+    padding: 40px 0 20px; /* ⬅️ Reduced bottom padding from 40px to 20px */
     gap: 50px;
     text-align: center;
     width: 100%;
@@ -926,9 +926,10 @@ section ol {
   }
 
   .hero-cta {
-    align-self: center !important; /* ✅ Center the button */
+    align-self: center !important;
     text-align: center !important;
     width: auto;
+    margin-top: 20px !important; /* ⬅️ Reduced from default (usually 30–50px) */
   }
 
   .hero-content h1 {
@@ -971,7 +972,6 @@ section ol {
     font-size: 1rem;
   }
 
-  /* ✅ Hero Rating (aligned left like bullets) */
   .hero-rating {
     text-align: left !important;
     margin-top: 15px;
@@ -980,7 +980,6 @@ section ol {
     font-weight: 600;
   }
 }
-
 
 
 @media (max-width: 768px) {
