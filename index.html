@@ -846,6 +846,30 @@ section ol {
   line-height: 1.5;
   margin-bottom: 12px;
 }
+    /* ✅ Fix for content wrapper centering and padding */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ✅ Fix for inner header alignment */
+.section-header .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* ✅ Fix trust icon item layout to prevent stretching */
+.trust-icon-item {
+  flex: 0 1 240px; /* prevents uneven stretching */
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+}
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
