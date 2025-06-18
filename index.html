@@ -781,9 +781,10 @@ section ol {
 .trust-icons-section {
   background-color: #f9f9f9;
   padding: 2.6rem 1rem;
+  text-align: center;
 }
 
-/* ✅ Section Header (Full Width Red Stripe) */
+/* ✅ Section Header */
 .trust-icons-section .section-header {
   position: relative;
   left: 50%;
@@ -806,47 +807,42 @@ section ol {
   margin: 0;
 }
 
-/* ✅ Wrapper */
-.trust-icons-section .content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/* ✅ Grid Layout */
+/* ✅ Grid layout */
 .trust-icons-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  max-width: 1200px;  /* slightly wider */
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
-/* ✅ Grid Item */
+/* ✅ Trust icon item block */
 .trust-icon-item {
-  flex: 1 1 240px;
-  max-width: 280px;
+  flex: 1 1 240px;      /* more room */
+  max-width: 320px;     /* allow larger icons */
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
 }
 
-/* ✅ Image */
+
+/* ✅ Base Image Style */
 .trust-icon-item img {
   width: 160px;
   height: auto;
-  object-fit: contain;
   margin-bottom: 1rem;
+  object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-/* ✅ Headline */
+/* ✅ Heading */
 .trust-icon-item h3 {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #353535;
-  margin: 0 0 10px;
   text-align: center;
+  color: #353535;
+  margin-bottom: 10px;
 }
 
 /* ✅ Paragraph */
@@ -855,8 +851,9 @@ section ol {
   color: #353535;
   line-height: 1.5;
   text-align: center;
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 }
+
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
@@ -1028,34 +1025,37 @@ section ol {
     text-align: justify;
   }
   
-  @media (max-width: 768px) {
+  /* Trsuted ✅ Mobile Boost (5–10% size increase) */
+@media (max-width: 768px) {
   .trust-icon-item img {
-    width: 160px;
+    width: 160px !important;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.1rem;
+    font-size: 1.18rem !important;
   }
 }
 
+/* ✅ Desktop Boost (~20% image & font increase) */
 @media (min-width: 769px) {
-  .trust-icon-item {
-    max-width: 320px;
+  .trust-icon-item img {
+    width: 240px !important;   /* visibly wider */
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
   }
 
-  .trust-icon-item img {
-    width: 240px;
-    height: 150px;
-    aspect-ratio: 1/1;
+  .trust-icon-item {
+    max-width: 340px;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.32rem;
+    font-size: 1.32rem !important;
   }
 }
-
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
@@ -1306,7 +1306,7 @@ section ol {
     </div>
   </div>
 
-  <!-- Content container -->
+  <!-- ✅ FIXED: Wrap grid in .content-wrapper for centering -->
   <div class="content-wrapper">
     <div class="trust-icons-grid">
 
