@@ -890,7 +890,7 @@ section ol {
     flex-direction: column;
     padding: 40px 20px;
     gap: 50px;
-    text-align: center;
+    text-align: centre;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -921,8 +921,11 @@ section ol {
   .hero-content p,
   .hero-content ul,
   .hero-cta {
-    text-align: center;
+    text-align: left !important;
   }
+  .hero-content ul {
+  padding-left: 20px; /* optional, makes bullets cleaner */
+}
 
   .hero-content h1 {
     font-size: 2.1rem;
