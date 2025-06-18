@@ -777,14 +777,12 @@ section ol {
   margin-right: -50vw;
 }
 
-/* ✅ Trust Icons Section Container */
 .trust-icons-section {
   background-color: #f9f9f9;
   padding: 2.6rem 1rem;
   text-align: center;
 }
 
-/* ✅ Section Header */
 .trust-icons-section .section-header {
   position: relative;
   left: 50%;
@@ -807,14 +805,12 @@ section ol {
   margin: 0;
 }
 
-/* ✅ Content Wrapper – Now wrapping the grid */
 .trust-icons-section .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* ✅ Grid layout */
 .trust-icons-grid {
   display: flex;
   flex-wrap: wrap;
@@ -822,7 +818,6 @@ section ol {
   gap: 2rem;
 }
 
-/* ✅ Trust icon item block */
 .trust-icon-item {
   flex: 1 1 240px;
   max-width: 280px;
@@ -830,7 +825,6 @@ section ol {
   margin: 0 auto;
 }
 
-/* ✅ Base Image Style */
 .trust-icon-item img {
   width: 160px;
   height: auto;
@@ -839,7 +833,6 @@ section ol {
   transition: all 0.3s ease;
 }
 
-/* ✅ Heading */
 .trust-icon-item h3 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -847,13 +840,13 @@ section ol {
   margin-bottom: 10px;
 }
 
-/* ✅ Paragraph */
 .trust-icon-item p {
   font-size: 1.1rem;
   color: #353535;
   line-height: 1.5;
   margin-bottom: 12px;
 }
+
 
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
@@ -1026,39 +1019,50 @@ section ol {
     text-align: justify;
   }
   
-  /* Trsuted ✅ Mobile Boost (5–10% size increase) */
+  /* ✅ Mobile View Adjustments */
 @media (max-width: 768px) {
+  .trust-icon-item {
+    text-align: center;
+    max-width: 100%;
+  }
+
   .trust-icon-item img {
-    width: 160px !important;
+    width: 160px;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
+    text-align: center;
   }
 }
 
-
-/* ✅ Desktop Boost (~20% image & font increase) */
+/* ✅ Desktop View Enhancements */
 @media (min-width: 769px) {
+  .trust-icon-item {
+    text-align: center;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
   .trust-icon-item img {
-    width: 240px !important;   /* visibly wider */
-    max-width: 100%;
+    width: 240px;
     height: 150px;
     object-fit: contain;
     aspect-ratio: 1 / 1;
-  }
-
-  .trust-icon-item {
-    max-width: 340px;
+    margin: 0 auto 1rem;
+    display: block;
   }
 
   .trust-icon-item h3,
   .trust-icon-item p {
-    font-size: 1.32rem !important;
+    font-size: 1.32rem;
+    text-align: center;
   }
 }
-
 
   /* ✅ CLS Fix: Hero Image and Container */
   .hero {
