@@ -814,18 +814,19 @@ section ol {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1300px;  /* slightly wider */
   margin: 0 auto;
   padding-top: 1rem;
 }
 
 /* ✅ Trust icon item block */
 .trust-icon-item {
-  flex: 1 1 200px;
-  max-width: 280px;
+  flex: 1 1 240px;      /* more room */
+  max-width: 320px;     /* allow larger icons */
   text-align: center;
   margin: 0 auto;
 }
+
 
 /* ✅ Base Image Style */
 .trust-icon-item img {
@@ -833,6 +834,12 @@ section ol {
   height: auto;
   max-height: 130px;
   margin-bottom: 1rem;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
 }
 
 /* ✅ Heading */
@@ -1013,7 +1020,7 @@ section ol {
   /* Trsuted ✅ Mobile Boost (5–10% size increase) */
 @media (max-width: 768px) {
   .trust-icon-item img {
-    width: 150px !important;
+    width: 160px !important;
   }
 
   .trust-icon-item h3,
@@ -1025,9 +1032,15 @@ section ol {
 /* ✅ Desktop Boost (~20% image & font increase) */
 @media (min-width: 769px) {
   .trust-icon-item img {
-    width: 220px !important;
+    width: 220px !important;   /* visibly wider */
     max-width: 100%;
-    height: auto;
+    height: 140px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+  }
+
+  .trust-icon-item {
+    max-width: 340px;
   }
 
   .trust-icon-item h3,
