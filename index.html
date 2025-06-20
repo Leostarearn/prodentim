@@ -857,20 +857,30 @@ section ol {
   text-align: center;
   margin-bottom: 12px;
 }
-     /* ✅ Official Website */
-    .official-link {
+
+    /* CTA button + Official link layout */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px; /* Default spacing */
+  margin-top: 10px;
+}
+
+/* Official link styling */
+.official-link {
   font-size: 1rem;
   font-weight: 600;
   color: #353535;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease;
+  padding-left: 5px;
 }
 
 .official-link:hover {
   color: #000;
   text-decoration: underline;
 }
-
 
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
@@ -1231,12 +1241,31 @@ section ol {
     text-align: left;
   }
 }
-  /* Desktop: button and link side-by-side */
+ /* 📱 Mobile Official (below 768px) */
+@media (max-width: 767px) {
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .official-link {
+    padding-left: 0;
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+/* 💻 Desktop (768px and above) - already handled */
 @media (min-width: 768px) {
   .cta-row {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* You can increase here if needed */
+  }
+
+  .official-link {
+    padding-left: 10px; /* Slight padding to give space between button and link */
   }
 }
 
