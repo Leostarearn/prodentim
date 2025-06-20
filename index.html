@@ -1234,12 +1234,12 @@ section ol {
   .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start !important;  /* ✅ KEY LINE */
-    text-align: left !important;         /* ✅ Prevent center override */
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   .hero-cta {
-    text-align: left !important;         /* ✅ Align block left */
+    text-align: left !important;
     width: 100%;
   }
 
@@ -1248,17 +1248,18 @@ section ol {
     flex-direction: row;
     justify-content: flex-start !important;
     align-items: center;
-    gap: 20px;
+    gap: 24px !important; /* ✅ Adjust gap here only */
     text-align: left !important;
   }
 
   .official-link {
     font-size: 1.1rem;
     transform: translateY(1px);
-    padding-left: 20px;
+    /* ❌ Remove padding-left */
     text-align: left;
   }
 }
+
 
    /* 📱 Mobile: stack CTA + Official below 768px */
 @media (max-width: 767px) {
