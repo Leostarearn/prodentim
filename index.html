@@ -858,23 +858,27 @@ section ol {
   margin-bottom: 12px;
 }
 
-    /* CTA button + Official link layout */
+   /* Base: CTA row layout */
 .cta-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 15px; /* Default spacing */
+  align-items: center; /* Vertical align baseline */
+  gap: 10px;
   margin-top: 10px;
 }
 
-/* Official link styling */
+/* Link styling (mobile and desktop) */
 .official-link {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #353535;
   text-decoration: none;
   transition: color 0.3s ease;
-  padding-left: 5px;
+  display: inline-block;
+  line-height: 1.1;
+  padding: 0; /* No extra padding */
+  margin: 0;
 }
 
 .official-link:hover {
@@ -1256,18 +1260,17 @@ section ol {
   }
 }
 
-/* ✅ Desktop-only fix for proper alignment and sizing */
+/* ✅ Desktop fix: adjust alignment and spacing */
 @media (min-width: 768px) {
   .cta-row {
-    justify-content: center;      /* Center both items */
-    align-items: center;          /* Align vertically */
-    gap: 6px;                    /* Slightly tighter spacing */
+    justify-content: center;   /* Center both button + text together */
+    align-items: center;
+    gap: 10px;                 /* Perfect gap */
   }
 
   .official-link {
-    font-size: 1.1rem;            /* Match button font size */
-    padding-left: 6px;            /* Slight spacing from button */
-    margin: 0;                    /* Remove any unwanted push */
+    font-size: 1.1rem;
+    transform: translateY(1px); /* Fine-tune vertical alignment */
   }
 }
   </style>
