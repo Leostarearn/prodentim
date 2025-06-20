@@ -1256,19 +1256,20 @@ section ol {
   }
 }
 
-/* 💻 Desktop (768px and above) - already handled */
+/* ✅ Desktop-only fix for proper alignment and sizing */
 @media (min-width: 768px) {
   .cta-row {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px; /* You can increase here if needed */
+    justify-content: center;      /* Center both items */
+    align-items: center;          /* Align vertically */
+    gap: 12px;                    /* Slightly tighter spacing */
   }
 
   .official-link {
-    padding-left: 10px; /* Slight padding to give space between button and link */
+    font-size: 1.1rem;            /* Match button font size */
+    padding-left: 6px;            /* Slight spacing from button */
+    margin: 0;                    /* Remove any unwanted push */
   }
 }
-
   </style>
 
   <!-- JSON-LD Schema: FAQ -->
