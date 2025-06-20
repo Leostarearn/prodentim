@@ -1830,13 +1830,17 @@ src="money-back.webp"
   <!-- Centered content area -->
   <div class="content-wrapper">
     
-    <!-- Visual image -->
-    <div>
+    <!-- 📷 Optimized Responsive Image -->
+    <div class="cta-image" style="margin-top: 20px;">
       <picture>
         <source 
-          srcset="prodentim-supplement-3.webp" 
+          srcset="
+            prodentim-supplement-3.webp 350w,
+            prodentim-supplement-2.webp 700w
+          " 
           media="(max-width: 768px)" 
           type="image/webp" />
+        
         <img 
           src="prodentim-supplement.webp"
           alt="ProDentim gummies for oral microbiome, gum and teeth support"
@@ -1844,7 +1848,7 @@ src="money-back.webp"
           height="357"
           loading="lazy"
           decoding="async"
-          style="max-width:100%; height:auto; margin-top: 20px;" />
+          style="width: 100%; max-width: 280px; height: auto;" />
       </picture>
     </div>
 
