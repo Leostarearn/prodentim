@@ -862,7 +862,7 @@ section ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;   /* Aligns left */
-  align-items: left;
+  align-items: Center;
   gap: 5px;                      /* Reduce gap between button and link */
   margin-top: 10px;
 }
@@ -1262,16 +1262,18 @@ section ol {
 /* ✅ Desktop fix: adjust alignment and spacing */
 @media (min-width: 768px) {
   .cta-row {
-    justify-content: center;   /* Center both button + text together */
+    justify-content: flex-start;  /* ✅ Aligns to the left */
     align-items: center;
-    gap: 10px;                 /* Perfect gap */
+    gap: 10px;
   }
 
   .official-link {
     font-size: 1.1rem;
-    transform: translateY(1px); /* Fine-tune vertical alignment */
+    transform: translateY(1px);
+    padding-left: 10px; /* Add some spacing if needed */
   }
 }
+
   </style>
 
   <!-- JSON-LD Schema: FAQ -->
