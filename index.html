@@ -1258,28 +1258,37 @@ section ol {
   }
 }
 
-/* 💻 Desktop (side by side, aligned left) */
+/* 💻 Desktop fix: ensure CTA and link are aligned LEFT */
 @media (min-width: 768px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;  /* ✅ KEY LINE */
+    text-align: left !important;         /* ✅ Prevent center override */
+  }
+
+  .hero-cta {
+    text-align: left !important;         /* ✅ Align block left */
+    width: 100%;
+  }
+
   .cta-row {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start !important;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
     text-align: left !important;
   }
 
   .official-link {
     font-size: 1.1rem;
     transform: translateY(1px);
-    padding-left: 10px;
+    padding-left: 3px;
     text-align: left;
   }
-
-  /* Optional: ensure full CTA block aligns left */
-  .hero-cta {
-    text-align: left !important;
-  }
 }
+
 
   </style>
 
