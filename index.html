@@ -858,13 +858,12 @@ section ol {
   margin-bottom: 12px;
 }
 
-   /* Base: CTA row layout */
-.cta-row {
+   .cta-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center; /* Vertical align baseline */
-  gap: 10px;
+  justify-content: flex-start;   /* Aligns left */
+  align-items: center;
+  gap: 5px;                      /* Reduce gap between button and link */
   margin-top: 10px;
 }
 
@@ -877,7 +876,7 @@ section ol {
   transition: color 0.3s ease;
   display: inline-block;
   line-height: 1.1;
-  padding: 0; /* No extra padding */
+  padding-left: 4px;     /* Slight padding between button and link */
   margin: 0;
 }
 
