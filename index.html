@@ -1306,32 +1306,33 @@ section ol {
 <section class="hero full-width-section" aria-label="ProDentim Product Introduction">
   <div class="content-wrapper content-wrapper--hero">
     
-    <!-- Image LEFT (desktop and mobile) -->
     <div class="hero-image">
-      <picture>
-        <!-- Mobile image -->
-        <source 
-          srcset="prodentim-supplement-3.webp 600w" 
-          media="(max-width: 768px)" 
-          type="image/webp" />
+  <picture>
+    <!-- Mobile image -->
+    <source 
+      srcset="
+        prodentim-supplement-3.webp 350w,
+        prodentim-supplement-2.webp 700w
+      "
+      media="(max-width: 768px)" 
+      type="image/webp" />
 
-        <!-- Desktop image -->
-        <img 
-          src="prodentim-supplement.webp" 
-          alt="ProDentim supplement" 
-          loading="eager" 
-          fetchpriority="high" 
-          decoding="async"
-          width="1104" 
-          height="1127"
-          srcset="
-            prodentim-supplement-3.webp 600w,
-            prodentim-supplement.webp 1104w
-          "
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </picture>
-    </div>
+    <!-- Desktop fallback -->
+    <img 
+      src="prodentim-supplement.webp" 
+      alt="ProDentim supplement" 
+      loading="eager" 
+      fetchpriority="high" 
+      decoding="async"
+      width="1104" 
+      height="1127"
+      srcset="
+        prodentim-supplement.webp 1104w
+      "
+      sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+    />
+  </picture>
+</div>
 
     <!-- Text RIGHT -->
     <div class="hero-content">
