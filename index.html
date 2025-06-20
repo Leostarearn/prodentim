@@ -858,17 +858,17 @@ section ol {
   margin-bottom: 12px;
 }
      /* ✅ Official Website */
-    .official-site-text a {
+    .official-link {
+  font-size: 1rem;
+  font-weight: 600;
   color: #353535;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  display: inline-block;
-  margin-top: 8px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.official-site-text a:hover {
-  text-decoration: underline; /* Optional */
+.official-link:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 
@@ -1231,6 +1231,14 @@ section ol {
     text-align: left;
   }
 }
+  /* Desktop: button and link side-by-side */
+@media (min-width: 768px) {
+  .cta-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
   </style>
 
@@ -1308,14 +1316,9 @@ section ol {
       <strong>Try ProDentim For Over 70% OFF Today!</strong>
       </p>
       <div class="hero-cta">
-  <a href="https://hop.clickbank.net/?affiliate=leostare&vendor=prodentim&cbpage=tsl&tid=om" class="btn-primary">
-    ProDentim 70% OFF Get Now
-  </a>
-
-  <div class="official-site-text">
-    <a href="https://hop.clickbank.net/?affiliate=leostare&vendor=prodentim&cbpage=tsl&tid=om" target="_blank" rel="noopener">
-      OFFICIAL WEBSITE →
-    </a>
+  <div class="cta-row">
+    <a href="https://hop.clickbank.net/?affiliate=leostare&vendor=prodentim&cbpage=tsl&tid=om" class="btn-primary">ProDentim 70% OFF Get Now</a>
+    <a href="https://prodentim.com" class="official-link"><strong>OFFICIAL WEBSITE →</strong></a>
   </div>
         <div class="hero-rating">
           ⭐️⭐️⭐️⭐️⭐️ 4.9/5 rating from 95,000+ Happy Customers
