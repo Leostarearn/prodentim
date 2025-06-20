@@ -858,17 +858,33 @@ section ol {
   margin-bottom: 12px;
 }
 
-    /* ✅ Official */
-    .official-link {
+    /* ✅ Global styles (shared for all screen sizes) */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px; /* 🎯 Controls spacing between button and link */
+  margin-top: 12px;
+}
+
+.official-link {
+  font-size: 1.05rem;
+  font-weight: 600;
   color: #353535;
   text-decoration: none;
-  font-weight: 600;
+  transition: color 0.3s ease;
+  display: inline-block;
+  line-height: 1.1;
+  margin: 0;
+  text-align: left;
 }
 
 .official-link:hover {
   color: #000;
   text-decoration: underline;
 }
+
   
    /* ========== [MQ-1024] Navigation Toggle on Tablets ========== */
 @media (max-width: 1024px) {
@@ -1229,11 +1245,9 @@ section ol {
   }
 }
 
-/* 💻 Desktop fix: ensure CTA and link are aligned LEFT */
+/* 💻 Desktop: Align left with controlled gap */
 @media (min-width: 768px) {
   .hero-content {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start !important;
     text-align: left !important;
   }
@@ -1244,21 +1258,20 @@ section ol {
   }
 
   .cta-row {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start !important;
     align-items: center;
-    gap: 24px !important; /* ✅ Adjust gap here only */
+    gap: 24px !important; /* 🔥 Force spacing to increase */
     text-align: left !important;
   }
 
   .official-link {
     font-size: 1.1rem;
     transform: translateY(1px);
-    /* ❌ Remove padding-left */
-    text-align: left;
+    /* padding-left removed */
   }
 }
+
 
 
    /* 📱 Mobile: stack CTA + Official below 768px */
