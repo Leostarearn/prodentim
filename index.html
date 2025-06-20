@@ -1308,16 +1308,17 @@ section ol {
     
     <div class="hero-image">
   <picture>
-    <!-- Mobile image -->
+    <!-- 📱 Mobile-optimized responsive images -->
     <source 
       srcset="
         prodentim-supplement-3.webp 350w,
-        prodentim-supplement-2.webp 700w
+        prodentim-supplement-2.webp 700w,
+        prodentim-supplement-1.webp 800w
       "
       media="(max-width: 768px)" 
       type="image/webp" />
 
-    <!-- Desktop fallback -->
+    <!-- 💻 Desktop fallback image -->
     <img 
       src="prodentim-supplement.webp" 
       alt="ProDentim supplement" 
@@ -1326,9 +1327,7 @@ section ol {
       decoding="async"
       width="1104" 
       height="1127"
-      srcset="
-        prodentim-supplement.webp 1104w
-      "
+      srcset="prodentim-supplement.webp 1104w"
       sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
     />
   </picture>
