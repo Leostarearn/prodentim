@@ -1228,20 +1228,6 @@ section ol {
     text-align: left;
   }
 }
- /* 📱 Mobile (centered below button) */
-@media (max-width: 767px) {
-  .cta-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .official-link {
-    padding-left: 0;
-    padding-top: 5px;
-    text-align: center;
-  }
-}
 
 /* 💻 Desktop fix: ensure CTA and link are aligned LEFT */
 @media (min-width: 768px) {
@@ -1262,7 +1248,7 @@ section ol {
     flex-direction: row;
     justify-content: flex-start !important;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     text-align: left !important;
   }
 
@@ -1271,6 +1257,23 @@ section ol {
     transform: translateY(1px);
     padding-left: 20px;
     text-align: left;
+  }
+}
+
+   /* 📱 Mobile: stack CTA + Official below 768px */
+@media (max-width: 767px) {
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .official-link {
+    padding-left: 0 !important;
+    padding-top: 6px;
+    text-align: center;
+    display: block;
   }
 }
 
