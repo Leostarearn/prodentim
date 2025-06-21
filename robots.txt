@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /drafts/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://prodentim.leostarearn.com/sitemap.xml
+Sitemap: https://prodentim.leostarearn.com/uk/sitemap.xml
+Sitemap: https://prodentim.leostarearn.com/au/sitemap.xml
+Sitemap: https://prodentim.leostarearn.com/sitemap_index.xml
